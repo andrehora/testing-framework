@@ -1,5 +1,5 @@
 from TestStub import TestSpy, TestStub
-from my_test_runner import MyTestRunner
+from my_test_runner import TestRunner
 from test_case import TestCase
 from test_loader import TestLoader
 
@@ -42,5 +42,5 @@ class TestLoaderTest(TestCase):
 loader = TestLoader()
 suite = loader.make_suite(TestLoaderTest)
 
-runner = MyTestRunner()
+runner = TestRunner()
 runner.run(suite)
