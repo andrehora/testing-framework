@@ -95,5 +95,3 @@ for name in [
     'test_template_method'
 ]:
     TestCaseTest(name).run(result)
-
-print(result.summary())   # → 8 run, 0 failed, 0 error
